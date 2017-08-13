@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我们下了课去几餐吃？</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<div class="container-fuild">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">我们下了课去几餐吃？</a>
+                    </div>
+                </div>
+            </nav>
+            <form class="form" style="padding: 0 15px;">
+                <div class="form-group">
+                    <label>星期</label>
+                    <select class="form-control" id="week">
+                        <option value="1">周一</option>
+                        <option value="2">周二</option>
+                        <option value="3">周三</option>
+                        <option value="4">周四</option>
+                        <option value="5">周五</option>
+                        <option value="6">周六</option>
+                        <option value="7">周日</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>节数</label>
+                    <select class="form-control" id="js">
+                        <option value="1">第一大节</option>
+                        <option value="2" selected>第二大节</option>
+                        <option value="3">第三大节</option>
+                        <option value="4">第四大节</option>
+                        <option value="5">第五大节</option>
+                        <option value="6">第六大节</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-default btn-block">查询</button>
+            </form>
+            <div class="container-fluid" style="margin-top: 20px;">
+                <div class="row hidden-xs">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <h5>当前估计人数：</h5>
+                        <ul class="list-group" id="count">
+                            <li class="list-group-item"></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <h5>当前估计上课教室数：</h5>
+                        <ul class="list-group" id="class">
+                            <li class="list-group-item"></li>
+                        </ul>
+                    </div>
+                </div>
+                <h5>这是什么？</h5>
+                <p>
+                    这是利用烟大现有课表数据及教室座位数据对每天中每节课的人数进行的一个粗略的估计统计而制作的热力图。
+                    <a href="https://blog.mayuko.cn/archives/2739/" target="_blank">详细介绍>></a>
+                </p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" style="padding-left: 0px">
+            <div id="map"></div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=7eef9379fef488a104b76a65211a37a5"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
